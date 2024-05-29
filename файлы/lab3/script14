@@ -3,3 +3,5 @@
 
 read -p "Введите своё имя: " first last
 echo "Твои данные: $last, $first..."
+
+

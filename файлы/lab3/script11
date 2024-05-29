@@ -20,3 +20,4 @@ do
 	echo "Параметр #$count: $param"
 	count=$(( $count + 1 ))
 done
+
