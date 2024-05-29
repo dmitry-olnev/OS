@@ -1,0 +1,9 @@
+#!/bin/bash
+#Глобальные переменные.
+
+function myfunc {
+	value=$(( $value + 10 ))
+}
+read -p "Введите значение: " value
+myfunc
+echo "Новое значение = $value"

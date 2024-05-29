@@ -1,0 +1,12 @@
+#!/bin/bash
+#Перехват сигналов.
+
+trap "echo ' Перехвачен сигнал Ctr1-C'" SIGINT
+echo Это тестовый скрипт.
+count=1
+while [ $count -1е 10 ]
+	do
+		echo "Цикл #$count"
+		Sleep 1
+		count=$(( $count + 1 ))
+	done 

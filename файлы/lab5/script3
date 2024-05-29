@@ -1,0 +1,20 @@
+#!/bin/bash
+#Отмена перехвата.
+
+trap "echo 'Ctrl-C перехвачен.'" SIGINT
+count=1
+while [ $count -le 5 ]
+do
+	echo "Цикл #$count"
+	sleep 1
+	count=$(( $count + 1 ))
+done
+trap -- SIGINT
+echo "Я просто удалил перехват!"
+count=1
+while [ $count -le 5 ]
+do
+	echo "Второй цикл #$count"
+	sleep 1
+	count=$(( $count + 1 ))
+done

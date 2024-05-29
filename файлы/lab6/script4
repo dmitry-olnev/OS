@@ -1,0 +1,9 @@
+#!/bin/bash
+#Запись вывода функции в переменную.
+
+function myfunc {
+	read -p "Введите значение: " value
+	echo $(( $value + 10 ))
+}
+result=$( myfunc)
+echo "Новое значение = $result"

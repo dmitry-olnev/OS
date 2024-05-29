@@ -1,0 +1,10 @@
+#!/bin/bash
+#Локальные переменные.
+
+function myfunc {
+	local temp=$[ $value + 5 ]
+	echo "Функция Temp изнутри = $temp"
+}
+temp=4
+myfunc
+echo "Функция Temp снаружи = $temp"

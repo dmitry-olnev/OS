@@ -1,0 +1,11 @@
+#!/bin/bash
+#Правильная конструкция.
+
+function myfunc {
+	local newarray
+	newarray=("$@")
+	echo "Значения нового массива: ${newarray[*]}"
+}
+myarray=(1 2 3 4 5)
+echo "Исходный массив: ${myarray[*]}"
+myfunc ${myarray[*]}

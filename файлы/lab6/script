@@ -1,0 +1,15 @@
+#!/bin/bash
+#Использование функций.
+
+function myfunc {
+	echo "Это пример использования функции"
+}
+count=1
+while [ $count -le 3 ]
+do
+	myfunc
+	count=$(( $count + 1 ))
+done
+echo "Это конец цикла"
+myfunc
+echo "Конец скрипта"

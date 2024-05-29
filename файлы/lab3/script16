@@ -1,0 +1,6 @@
+#!/bin/bash
+#При вызове read можно указывать 
+#несколько переменных.
+
+read -p "Enter your name: " first last
+echo "Your data for $last, $first…"

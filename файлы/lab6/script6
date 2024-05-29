@@ -1,0 +1,14 @@
+#!/bin/bash
+#Функции не могут читать аргументы, 
+#переданные при запуске программы.
+
+function myfunc {
+	echo $(( $1 + $2 ))
+}
+if [ $# -eq 2 ]
+	then
+		value=$( myfunc)
+		echo "Результат = $value"
+	else
+		echo "Использование: myfunc a b"
+fi

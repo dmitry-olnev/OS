@@ -1,0 +1,6 @@
+#!/bin/bash
+#Не указав переменные, вволные данные
+#поместяться в переменную REPLY.
+
+read -p "Enter your name: "
+echo Hello $REPLY, welcome to my program.

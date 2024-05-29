@@ -1,0 +1,6 @@
+#!/bin/bash
+#Скрытие поля от введённых данных.
+
+read -s -p "Enter your password: " pass
+echo "Is your password really $pass? "
+

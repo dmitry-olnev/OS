@@ -1,0 +1,10 @@
+#!/bin/bas
+#Использование команды return.
+
+function myfunc {
+	read -p "Введите значение: " value
+	echo "Добавка к значению..."
+	return $(( $value + 10 ))
+}
+myfunc
+echo "Новое значение = $?"
