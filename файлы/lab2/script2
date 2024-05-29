@@ -1,0 +1,10 @@
+#!/bin/bash
+#Инициализация цикла списком, полученным 
+#из результатов работы команды.
+
+file="myfile"
+for var in $(cat $file)
+do
+	echo " $var"
+done
+
