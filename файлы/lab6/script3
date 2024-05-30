@@ -1,4 +1,4 @@
-#!/bin/bas
+#!/bin/bash
 #Использование команды return.
 
 function myfunc {
@@ -8,3 +8,4 @@ function myfunc {
 }
 myfunc
 echo "Новое значение = $?"
+
